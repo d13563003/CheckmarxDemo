@@ -19,7 +19,7 @@ class Login
     public static void main(String[] args)   
     {
         try {
-            String email = request.getParameter("email");
+            //String email = request.getParameter("email");
             String token = request.getParameter("password");
 
             String sql = "select * from users where (email ='" + email +"' and password ='" + token + "')";
